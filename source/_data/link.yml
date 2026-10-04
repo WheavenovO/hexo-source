@@ -1,0 +1,15 @@
+- class_name: 我的其它账号
+  class_desc: 分类简介，可不写
+  link_list:
+    - name: B站主页
+      link: https://space.bilibili.com/21034562/dynamic
+      avatar: https://i0.hdslb.com/bfs/face/8e7d9579796de6211fb4f133b5005c07e85d3847.jpg
+      descr: #简介，可不写
+
+- class_name: 相关视频链接
+  class_desc: 参考的博客搭建教程视频
+  link_list:
+    - name: 博客建站参考教程
+      link: https://www.bilibili.com/video/BV1G84y1B7NH?spm_id_from=333.788.videopod.sections&vd_source=e4b2749029a591e46f947ff57487141c
+      avatar: https://i0.hdslb.com/bfs/archive/1f74e1a5575bfe48c1a78962149f1c7f52f0a589.jpg
+      descr: #简介，可不写
