@@ -50,8 +50,17 @@
   background-image: url("/img/categories.png");
 }
 
-/* ========== 清除下拉子菜单的空白占位 ========== */
-.menus_items .menus_item .menus_item_child a::before {
-  display: none !important;
-  content: none !important;
+body.is-home #page-header{
+  height: 100vh !important;
+  min-height:100vh !important;
+}
+/* 给header上层加黑色遮罩，把图片压暗 */
+body.is-home #page-header::before{
+  background:rgba(0,0,0,0.4) !important;
+  opacity:1 !important;
+}
+/* 非首页横幅300px */
+body:not(.is-home) #page-header{
+  height:300px !important;
+  min-height:300px !important;
 }
