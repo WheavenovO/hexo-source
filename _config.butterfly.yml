@@ -62,14 +62,14 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: https://image-hosting-915.pages.dev/image/avatar.webp
+  img: https://image-hosting-915.pages.dev/image/avatar1.webp
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: https://image-hosting-915.pages.dev/image/mr.webp
+default_top_img: https://image-hosting-915.pages.dev/image/mr1.webp
 
 # The banner image of index page
 index_img: 
