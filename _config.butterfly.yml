@@ -21,10 +21,10 @@ menu:
   主页: /
   时间流: /archives/
   分类:
-    学海无涯: /categories/学海无涯/
-    青灯有味: /categories/青灯有味/
-    万物静观: /categories/万物静观/
-    烟雨平生: /categories/烟雨平生/
+    学海: /categories/学海/
+    青灯: /categories/青灯/
+    静观: /categories/静观/
+    烟雨: /categories/烟雨/
   标签: /tags/
   音乐库: /music/
   相关链接: /link/
@@ -92,10 +92,10 @@ category_img:
 # Format:
 #  - category name: xxxxx
 category_per_img:
-  学海无涯: https://image-hosting-915.pages.dev/image/xhwy1.webp
-  青灯有味: https://image-hosting-915.pages.dev/image/qdyy1.webp
-  万物静观: https://image-hosting-915.pages.dev/image/wwjg1.webp
-  烟雨平生: https://image-hosting-915.pages.dev/image/yyps1.webp
+  学海: https://image-hosting-915.pages.dev/image/xhwy1.webp
+  青灯: https://image-hosting-915.pages.dev/image/qdyy1.webp
+  静观: https://image-hosting-915.pages.dev/image/wwjg1.webp
+  烟雨: https://image-hosting-915.pages.dev/image/yyps1.webp
 
 # The background image of footer
 footer_img: true
@@ -194,7 +194,7 @@ subtitle:
 # 5: Info displayed on the cover
 # 6: Masonry layout - Cover on top, info on the bottom
 # 7: Masonry layout - Info displayed on the cover
-index_layout: 3
+index_layout: 1
 
 # Display the article introduction on homepage
 # 1: description
