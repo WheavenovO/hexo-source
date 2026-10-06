@@ -54,7 +54,15 @@ body.is-home #page-header{
   height: 100vh !important;
   min-height:100vh !important;
 }
-/* 给header上层加黑色遮罩，把图片压暗 */
+
+/* =====首页header设置===== */
+body.is-home #page-header{
+  height: 100vh !important;
+  min-height:100vh !important;
+  background-image: none !important; /* 首页header不再单独加载图片，图片交给body全局背景 */
+  background: transparent !important;
+}
+/* header上层黑色遮罩 */
 body.is-home #page-header::before{
   background:rgba(0,0,0,0.4) !important;
   opacity:1 !important;
@@ -63,4 +71,13 @@ body.is-home #page-header::before{
 body:not(.is-home) #page-header{
   height:300px !important;
   min-height:300px !important;
+}
+
+/* 首页页脚透明 */
+body.is-home #footer {
+  background-color: transparent !important;
+}
+body.is-home #footer::before {
+  background-image: none !important;
+  background: transparent !important;
 }

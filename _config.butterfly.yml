@@ -72,10 +72,10 @@ disable_top_img: false
 default_top_img: https://image-hosting-915.pages.dev/image/mr1.webp
 
 # The banner image of index page
-index_img: 
+index_img: true
 
 # The banner image of archive page
-archive_img: 
+archive_img: https://image-hosting-915.pages.dev/image/sjl1.webp
 
 # Note: tag page, not tags page
 tag_img:
@@ -92,9 +92,13 @@ category_img:
 # Format:
 #  - category name: xxxxx
 category_per_img:
+  学海无涯: https://image-hosting-915.pages.dev/image/xhwy1.webp
+  青灯有味: https://image-hosting-915.pages.dev/image/qdyy1.webp
+  万物静观: https://image-hosting-915.pages.dev/image/wwjg1.webp
+  烟雨平生: https://image-hosting-915.pages.dev/image/yyps1.webp
 
 # The background image of footer
-footer_img: false
+footer_img: true
 
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
@@ -112,35 +116,35 @@ cover:
 
 # Replace Broken Images
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: https://image-hosting-915.pages.dev/image/404.webp
+  post_page: https://image-hosting-915.pages.dev/image/404.webp
 
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: '无敌的你又迷路了，点此按钮返回'
-  background: /img/error-page.png
+  subtitle: '页面找不到了，点此按钮返回'
+  background: https://image-hosting-915.pages.dev/image/404.webp
 
 post_meta:
   # Home Page
   page:
     # Choose: created / updated / both
-    date_type: created
+    date_type: both
     # Choose: date / relative
     date_format: date
     categories: true
     tags: false
-    label: true
+    label: false
   post:
     # Choose: left / center
-    position: left
+    position: center
     # Choose: created / updated / both
     date_type: both
     # Choose: date / relative
     date_format: date
     categories: true
     tags: true
-    label: true
+    label: false
 
 # --------------------------------------
 # Index page settings
@@ -155,7 +159,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -171,7 +175,17 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-
+   - '万物静观皆自得，四时佳兴与人同'
+   - '越是憧憬，越要风雨兼程'
+   - '保持热爱，奔赴山海'
+   - '岁岁常欢愉，万事皆胜意'
+   - '不必光芒万丈，但始终温暖有光'
+   - '人生如逆旅，我亦是行人'
+   - '苟日新，日日新，又日新'
+   - '岁岁平安，万事顺意'
+   - '行到水穷处，坐看云起时'
+   - '细雨潇潇欲晓天，半床花影伴书眠'
+   
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
@@ -188,9 +202,9 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: false
   # If you set method to 2 or 3, the length need to config
-  length: 500
+  length: 100
 
 # --------------------------------------
 # Post Settings
@@ -1066,7 +1080,7 @@ inject:
     - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
     - |
-      <script>
+     <script>
       const imgList=[
       "https://image-hosting-915.pages.dev/image/bg01.webp",
       "https://image-hosting-915.pages.dev/image/bg02.webp",
@@ -1078,31 +1092,33 @@ inject:
       "https://image-hosting-915.pages.dev/image/bg08.webp",
       ];
       function randomHomeBanner(){
-      let oldStyle=document.getElementById('random-bg-style');
-      if(oldStyle) oldStyle.remove();
-      const bodyDom = document.body;
-      bodyDom.classList.remove('is-home');
-      let style=document.createElement('style');
-      style.id='random-bg-style';
-      document.head.appendChild(style);
-      if(window.location.pathname==='/'){
-      bodyDom.classList.add('is-home');
-      const randomImg=imgList[Math.floor(Math.random()*imgList.length)];
-      const img=new Image();
-      img.onload=()=>{
-      style.textContent=`
-      #page-header{background-image:url(${randomImg})!important;background-size:cover!important;background-position:center center!important;}
-      body{background-image:url(${randomImg})!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important;}
-      `;
-      };
-      img.src=randomImg;
-      }else{
-      style.textContent=`body{background-image:none!important;}`;
-      }
+        let oldStyle=document.getElementById('random-bg-style');
+        if(oldStyle) oldStyle.remove();
+        const bodyDom = document.body;
+        bodyDom.classList.remove('is-home');
+        let style=document.createElement('style');
+        style.id='random-bg-style';
+        document.head.appendChild(style);
+        if(window.location.pathname==='/'){
+          bodyDom.classList.add('is-home');
+          const randomImg=imgList[Math.floor(Math.random()*imgList.length)];
+          const img=new Image();
+          img.onload=()=>{
+            style.textContent=`
+              #page-header{background-image:url(${randomImg})!important;background-size:cover!important;background-position:center center!important;}
+              body{background-image:url(${randomImg})!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important;}
+              #main{background:transparent !important;}
+            `;
+          };
+          img.src=randomImg;
+        }else{
+          style.textContent=`body{background-image:none!important;}`;
+        }
       }
       randomHomeBanner();
       document.addEventListener('pjax:success',randomHomeBanner);
-            </script>
+      </script>
+
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
