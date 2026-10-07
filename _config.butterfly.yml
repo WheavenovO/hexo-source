@@ -179,7 +179,7 @@ subtitle:
    - '越是憧憬，越要风雨兼程'
    - '保持热爱，奔赴山海'
    - '岁岁常欢愉，万事皆胜意'
-   - '不必光芒万丈，但始终温暖有光'
+   - '不必光芒万丈，始终温暖有光'
    - '人生如逆旅，我亦是行人'
    - '苟日新，日日新，又日新'
    - '岁岁平安，万事顺意'
@@ -201,10 +201,10 @@ index_layout: 1
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
-index_post_content:
+index_post_content: 
   method: false
   # If you set method to 2 or 3, the length need to config
-  length: 100
+  length: 10
 
 # --------------------------------------
 # Post Settings
@@ -220,7 +220,7 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: false
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
@@ -250,7 +250,7 @@ post_edit:
 related_post:
   enable: true
   # Number of posts displayed
-  limit: 6
+  limit: 3
   # Choose: created / updated
   date_type: created
 
@@ -258,19 +258,19 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # Displays outdated notice for a post
 noticeOutdate:
   enable: false
   # Style: simple / flat
-  style: flat
+  style: simple
   # When will it be shown
-  limit_day: 365
+  limit_day: 1
   # Position: top / bottom
   position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 本文距上次更新已有
+  message_next: 天
 
 # --------------------------------------
 # Footer Settings
@@ -284,7 +284,10 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text:
+  custom_text: 
+    本站采用 CC BY-NC-SA 4.0 协议
+    <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备xxxxxx号</a>
+
 
 # --------------------------------------
 # Aside Settings
@@ -299,19 +302,19 @@ aside:
   # Position: left / right
   position: right
   display:
-    archive: true
-    tag: true
-    category: true
+    archive: false
+    tag: false
+    category: false
   card_author:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: 
   card_announcement:
-    enable: true
+    enable: false
     content: This is my Blog
   card_recent_post:
     enable: true
@@ -328,14 +331,14 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
     expand: none
     sort_order:
   card_tags:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 40
     color: false
@@ -354,10 +357,10 @@ aside:
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
     # If set 0 will show all
-    limit: 8
+    limit: 12
     sort_order:
   card_post_series:
-    enable: true
+    enable: false
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -372,7 +375,7 @@ aside:
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
-    runtime_date:
+    runtime_date: 2026/10/10 00:00:00
 
 # --------------------------------------
 # Bottom right button
