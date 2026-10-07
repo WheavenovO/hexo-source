@@ -309,10 +309,10 @@ aside:
     enable: true
     description:
     button:
-      enable: false
-      icon: fab fa-github
-      text: Follow Me
-      link: 
+      enable: true
+      icon: fa-brands fa-bilibili
+      text: bilibili
+      link: https://space.bilibili.com/21034562
   card_announcement:
     enable: false
     content: This is my Blog
@@ -412,8 +412,8 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
-  start:
-  end:
+  start: 22
+  end: 6
 
 # Show scroll percent in scroll-to-top button
 rightside_scroll_percent: false
@@ -804,8 +804,8 @@ site_verification:
 # The user interface setting of category and tag page
 # Choose: index - same as Homepage UI / default - same as archives UI
 # leave it empty or index
-category_ui: default
-tag_ui: default
+category_ui: 
+tag_ui: 
 
 # Rounded corners for UI elements
 rounded_corners_ui: true
@@ -824,9 +824,9 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url:
+  pace_css_url: 
 
 # Page Transition
 enter_transitions: true
@@ -847,15 +847,15 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
-  code_font_size:
-  font_family:
+  global_font_size: 
+  code_font_size: 
+  font_family: 
   code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
   font_link:
-  font_family:
+  font_family: DymonShouXieTi,sans-serif
 
 # The setting of divider icon
 hr_icon:
@@ -1080,6 +1080,7 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
+    - '<link rel="stylesheet" href="/css/font.css">'
     - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
     - |

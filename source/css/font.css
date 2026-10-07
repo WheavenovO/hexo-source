@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'LemiXiaoNaiPaoTi';
+  src: url('/font/LemiXiaoNaiPaoTi.woff2') format('woff2'),
+       url('/font/LemiXiaoNaiPaoTi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DymonShouXieTi';
+  src: url('/font/DymonShouXieTi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Butterfly 导航【全部一级菜单】：包含带下拉的分类（span文字） */
+#nav .menus_item > a,
+#nav .menus_item > span {
+  font-family: LemiXiaoNaiPaoTi, sans-serif !important;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+}
+
+/* 下拉子菜单（学海、青灯、静观、烟雨） */
+#nav .menus_item_child a {
+  font-family: LemiXiaoNaiPaoTi, sans-serif !important;
+  font-size: 22px;
+}
+
+/* 首页Banner主标题 Wheaven's Blog */
+#site-title {
+  font-size: 72px !important;
+  font-family: DymonShouXieTi, sans-serif !important;
+  letter-spacing: 2px;
+}
+
+/* 副标题 */
+#site-subtitle {
+  font-size: 36px !important;
+}
