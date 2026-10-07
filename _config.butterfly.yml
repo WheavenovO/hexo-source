@@ -410,7 +410,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
   end:
@@ -452,19 +452,19 @@ copy:
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
-  min2read: true
+  min2read: false
   # Display the total word count of the website in aside's webinfo
   total_wordcount: true
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -482,7 +482,7 @@ math:
 
   mathjax:
     # Enable the contextual menu
-    enableMenu: true
+    enableMenu: false
     # Choose: all / ams / none, This controls whether equations are numbered and how
     tags: none
 
@@ -540,12 +540,12 @@ share:
   # Share.js
   # https://github.com/overtrue/share.js
   sharejs:
-    sites: facebook,x,wechat,weibo,qq
+    sites: wechat,weibo,qq
 
   # AddToAny
   # https://www.addtoany.com/
   addtoany:
-    item: facebook,x,wechat,sina_weibo,facebook_messenger,email,copy_link
+    item: 
 
 # --------------------------------------
 # Comments System
@@ -804,8 +804,8 @@ site_verification:
 # The user interface setting of category and tag page
 # Choose: index - same as Homepage UI / default - same as archives UI
 # leave it empty or index
-category_ui:
-tag_ui:
+category_ui: default
+tag_ui: default
 
 # Rounded corners for UI elements
 rounded_corners_ui: true
